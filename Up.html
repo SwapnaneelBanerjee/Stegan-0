@@ -1,0 +1,18 @@
+<!DOCTYPE html> <html> <head> <title>Upload Image</title> <style> body { font-family: Arial, sans-serif; font-size: 14px; margin: 0; padding: 0; background-color: #e0decc; color: #084225; }
+	h1 { text-align: center; margin-top: 100px; margin-bottom: 60px; font-size: 2.5rem; }
+	
+	form { max-width: 500px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 10px; border: 5px solid #2A4E32; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); box-sizing: border-box; }
+	
+	input[type="file"] { display: none; }
+	
+	label[for="image"] { display: block; margin: 0 auto; margin-bottom: 20px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; background-color: #f5f5f5; text-align: center; box-sizing: border-box; }
+	
+	input[type="submit"] { display: block; margin: 0 auto; margin-top: 20px; padding: 10px; background-color: #084225; color: #fff; border: none; border-radius: 5px; cursor: pointer; box-sizing: border-box; }
+	
+	input[type="submit"]:hover { background-color: #06391f; }
+	
+	@media (max-width: 500px) { h1 { font-size: 2rem; margin-top: 50px; margin-bottom: 30px; }
+	
+	form { padding: 10px; } } </style>
+	
+	</head> <body> <h1>Upload Image</h1> <form action="upload.php" method="post" enctype="multipart/form-data"> <input type="file" name="image" id="image"> <label for="image">Choose File</label> <input type="submit" value="Upload" name="submit"> </form> </body> </html>
